@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { ComponentsModule } from './../components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -15,7 +16,8 @@ import { ContactoComponent } from './contacto/contacto.component';
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    RouterModule
   ],
   exports: [
     HomeComponent,

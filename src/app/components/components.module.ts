@@ -5,7 +5,9 @@ import { HeaderComponent } from './header/header.component';
 import { FormContacComponent } from './form-contac/form-contac.component';
 import { NosotrosMisionComponent } from './nosotros-mision/nosotros-mision.component';
 import { NosotrosVisionComponent } from './nosotros-vision/nosotros-vision.component';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
+import { VisionComponent } from './vision/vision.component';
+import { MisionComponent } from './mision/mision.component';
 
 
 
@@ -15,12 +17,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     HeaderComponent,
     FormContacComponent,
     NosotrosMisionComponent,
-    NosotrosVisionComponent
+    NosotrosVisionComponent,
+    VisionComponent,
+    MisionComponent
   ],
   imports: [
     CommonModule,
-    RouterLink,
-    RouterLinkActive
+    RouterModule
   ],
   exports:[
     FooterComponent,
