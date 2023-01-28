@@ -1,5 +1,3 @@
-import { NosotrosVisionComponent } from './components/nosotros-vision/nosotros-vision.component';
-import { NosotrosMisionComponent } from './components/nosotros-mision/nosotros-mision.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -13,7 +11,7 @@ const routes: Routes = [
   {
     path: 'nosotros', component: NosotrosComponent,
     children: [
-      { path: 'mision', component: MisionComponent },
+      { path: 'mision', component: MisionComponent},
       { path: 'vision', component: VisionComponent},
     ]
   },

@@ -1,11 +1,19 @@
-<div class="w-3/5 mx-auto mt-5 bg-gray-300">
-<div class="grid grid-cols-2">
+<div class="w-3/5 mx-auto mt-5 bg-gray-200 py-5 px-10">
+  <div class="grid grid-cols-2 mt-5">
     <div>
-        <app-nosotros-mision></app-nosotros-mision>
-        
+      <a
+        class="px-4 py-2 text-white rounded-lg bg-blue-500 ml-[80%]"
+        [routerLink]="['vision']"
+        >Vision</a>
     </div>
     <div>
-       <app-nosotros-vision></app-nosotros-vision>
+      <a
+        class="px-4 py-2 text-white rounded-lg bg-blue-500"
+        [routerLink]="['mision']"
+        >Mision</a>
     </div>
-</div>
+  </div>
+  <div class="">
+    <router-outlet></router-outlet>
+  </div>
 </div>
